@@ -272,7 +272,7 @@ public:
  * Returns:
  *      bool   : true if fractions are equal, false otherwise
  */
-    bool operator==(const Fraction &rhs) const                                // Overloaded equality operator to compare two Fraction objects
+    bool operator==(const Fraction &rhs) const                                // Overloaded = operator to compare two Fraction objects
         {
             bool result = (this->num * rhs.den) == (this->den * rhs.num);     // Compare the cross products of the fractions to check for equality
 
