@@ -2,7 +2,7 @@
 *
 *  Author:           Victoria Heredia
 *  Email:            vdheredia1128@my.msutexas.edu
-*  Label:            06-P01
+*  Label:            P01
 *  Title:            Program 1 - Fraction Class
 *  Course:           2143-Object-Oriented-Programming
 *  Semester:         Fall 2024
@@ -43,14 +43,13 @@ using namespace std;
  * Private Methods:
  *      int                 gcd(int a, int b) const                   
  *      int                 lcm(int a, int b) const                   
- *      void                reduce()                                  
+ *      void                simplify()                                  
  *
  * Usage:
- *      - Fraction f1(1, 2); // Creates a fraction 1/2
- *      - Fraction f2(3, 4); // Creates a fraction 3/4
- *      - Fraction result = f1 + f2; // Adds two fractions
- *      - cout << result; // Outputs the result
- *      - if (f1 == f2) { cout << "Equal"; } 
+ *      - Fraction f1(1, 2); 
+ *      - Fraction f2(3, 4); 
+ *      - Fraction result = f1 + f2; 
+ *      - cout << result; 
  */
 
 class Fraction {
@@ -72,23 +71,24 @@ private:
  * Returns:
  *      int   : the greatest common divisor of the two integers
  */
-    int gcd(int a, int b) const
+    int gcd(int a, int b) const                 // 'a' and 'b' are the parameters passed to the function, these parameters 
+                                                // represent the two integers for which the GCD is to be calculated
        {
-            if (b == 0) 
+            if (b == 0)                         //Base case: if b is 0, the GCD is a
             {
                 return a;
             }
             else 
-            {
-                return gcd(b, a % b);
+            { 
+                return gcd(b, a % b);           //Recursive case: call gcd with b and the remainder of a divided by b
             }
        }
 
 /**
- * Private : reduce()
+ * Private : simplify()
  *
  * Description:
- *      Reduces the fraction to its simplest form by dividing both the numerator
+ *      Simplifies the fraction to its simplest form by dividing both the numerator
  *      and denominator by their greatest common divisor (GCD).
  *
  * Params:
@@ -96,17 +96,19 @@ private:
  *
  * Returns:
  *      None
- */
-    Fraction simplify(Fraction frac) const
+ */ 
+  Fraction simplify(Fraction frac) const          // 'frac' is the parameter passed to the function  
     {
-        int gcd = frac.gcd(frac.num, frac.den);
-        frac.num /= gcd;
+        int gcd = frac.gcd(frac.num, frac.den);  // Calculate the greatest common divisor (GCD) of the numerator and denominator
+        
+        frac.num /= gcd;                         // Divide the numerator and denominator by the GCD to simplify the fraction
         frac.den /= gcd;
-        return frac; // Return the simplified fraction
+       
+        return frac;                             // Return the simplified fraction
     }
 
 public:
-    Fraction() : num(1), den(1) {}
+    Fraction() : num(1), den(1) {}               // Default constructor for the Fraction class, initializes the fraction to 1/1
 
     /**
      * Public : Fraction (int n, int d)
@@ -143,12 +145,13 @@ public:
      */
     Fraction(string f) 
      {
-        num = f[0] - 48;
-        den = f[2] - 48;
-         simplify(f);
+        num = f[0] - 48;                                            // Convert the first character of the string to an integer for the numerator
+        den = f[2] - 48;                                            // Convert the third character of the string to an integer for the denominator
+         simplify(f);                                               // Simplify the fraction
      }
 
-    friend ostream &operator<<(ostream &os, const Fraction &rhs) {
+    friend ostream &operator<<(ostream &os, const Fraction &rhs)    //  Overload the << operator to print the fraction in the form "num/den"
+    {
         return os << rhs.num << "/" << rhs.den;
     }
 
@@ -165,18 +168,20 @@ public:
  * Returns:
  *      Fraction   : the result of adding two fractions
  */
-    Fraction operator+(const Fraction &rhs) const {
-        Fraction temp = rhs;
-        temp.num = temp.num * this->den;
+    Fraction operator+(const Fraction &rhs) const              // Overload the + operator to add two Fraction objects
+    {
+        Fraction temp = rhs;                                   // Create a temporary Fraction object initialized with the right-hand side fraction
+       
+        temp.num = temp.num * this->den;                       // Adjust the numerator and denominator of the temporary fraction to have a common denominator
         temp.den = temp.den * this->den;
 
-        int newnum = this->num * rhs.den;
+        int newnum = this->num * rhs.den;                      // Calculate the new numerator and denominator for the result
         int newden = this->den * rhs.den;
 
-        temp.num = temp.num + newnum;
+        temp.num = temp.num + newnum;                          // Add the numerators and set the common denominator
         temp.den = newden;
 
-        return simplify(temp);
+        return simplify(temp);                                 // Simplify the resulting fraction before returning it
     }
 
 
@@ -193,19 +198,22 @@ public:
  * Returns:
  *      Fraction   : the result of subtracting two fractions
  */
-    Fraction operator-(const Fraction &rhs) const {
-        Fraction temp = rhs;
-        temp.num = temp.num * this->den;
+    Fraction operator-(const Fraction &rhs) const               // Overload the - operator to substract two Fraction objects
+    {
+        Fraction temp = rhs;                                    // Create a temporary Fraction object initialized with the right-hand side fraction
+
+        temp.num = temp.num * this->den;                        // Adjust the numerator and denominator of the temporary fraction to have a common denominator
         temp.den = temp.den * this->den;
 
-        int newnum = this->num * rhs.den;
+        int newnum = this->num * rhs.den;                       // Calculate the new numerator and denominator for the result
         int newden = this->den * rhs.den;
 
-        temp.num = newnum - temp.num;
+        temp.num = newnum - temp.num;                           // Subtract the numerators and set the common denominator
         temp.den = newden;
 
         
-        return simplify(temp);
+        return simplify(temp);                                  // Simplify the resulting fraction before returning it
+
     }
 
 /**
@@ -221,10 +229,11 @@ public:
  * Returns:
  *      Fraction   : the result of multiplying two fractions
  */
-    Fraction operator*(const Fraction &rhs) const {
-        int num = this->num * rhs.num;
-        int den = this->den * rhs.den;
-        return simplify (Fraction(num, den));
+    Fraction operator*(const Fraction &rhs) const              // Overload the * operator to multiply two Fraction objects
+    {
+        int num = this->num * rhs.num;                         // Multiply the numerators of both fractions
+        int den = this->den * rhs.den;                         // Multiply the denominators of both fractions
+        return simplify (Fraction(num, den));                  // Simplify the resulting fraction before returning it
         
     }
 
@@ -242,10 +251,11 @@ public:
  * Returns:
  *      Fraction   : the result of dividing two fractions
  */
-    Fraction operator/(const Fraction &rhs) const {
-        int num = this->num * rhs.den;
-        int den = this->den * rhs.num;
-        return simplify (Fraction(num, den));
+    Fraction operator/(const Fraction &rhs) const         // Overload the / operator to divide two Fraction objects
+    {
+        int num = this->num * rhs.den;                    // Multiply the numerator of the first fraction by the denominator of the second fraction
+        int den = this->den * rhs.num;                    // Multiply the denominator of the first fraction by the numerator of the second fraction
+        return simplify (Fraction(num, den));             // Simplify the resulting fraction before returning it
     }
 
 /**
@@ -261,10 +271,11 @@ public:
  * Returns:
  *      bool   : true if fractions are equal, false otherwise
  */
-    bool operator==(const Fraction &rhs) const 
+    bool operator==(const Fraction &rhs) const                                // Overloaded equality operator to compare two Fraction objects
         {
-            bool result = (this->num * rhs.den) == (this->den * rhs.num);
-            if (result) 
+            bool result = (this->num * rhs.den) == (this->den * rhs.num);     // Compare the cross products of the fractions to check for equality
+
+            if (result)                                                       // Print the comparison result
             {
                 cout << "Comparison result: Equal" << endl;
             } 
@@ -272,30 +283,32 @@ public:
             {
                 cout << "Comparison result: Not Equal" << endl;
             }
-            return result;
+            return result;                                                    // Return the result of the comparison
         }
 
     void print() const 
     {
-        cout << num << "/" << den << endl;
+        cout << num << "/" << den << endl;                                   // Print the fraction in the form "num/den"
     }
 };
 
 int main() 
 {
     
-    string f1, op, f2;
+    string f1, op, f2;                           // Declare three string variables to store the input fractions and the operator
 
-      while (cin >> f1 >> op >> f2) {
-        auto i = f1[0] - '0';
+      while (cin >> f1 >> op >> f2)              // Continuously read input until end-of-file (EOF)
+      {
+        auto i = f1[0] - '0';                    // Extract numerator and denominator from the first fraction string
         auto j = f1[2] - '0';
-        auto x = f2[0] - '0';
+
+        auto x = f2[0] - '0';                    // Extract numerator and denominator from the second fraction string
         auto y = f2[2] - '0';
 
-        Fraction F1(i, j);
+        Fraction F1(i, j);                       // Create Fraction objects for the two fractions
         Fraction F2(x, y);
 
-        if (op == "+")
+        if (op == "+")                           // Perform the operation based on the operator input
             cout << F1 + F2 << endl;
         else if (op == "-")
             cout << F1 - F2 << endl;
@@ -305,7 +318,7 @@ int main()
             cout << F1 / F2 << endl;
         else if (op == "==")
         {
-             if (F1 == F2)
+             if (F1 == F2)                       // Check if the two fractions are equal
                 cout << "true" << endl;
              else
                 cout << "false" << endl;
