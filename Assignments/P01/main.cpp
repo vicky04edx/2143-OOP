@@ -52,7 +52,8 @@ using namespace std;
  *      - cout << result; 
  */
 
-class Fraction {
+class Fraction 
+{
 private:
     int num;
     int den;
