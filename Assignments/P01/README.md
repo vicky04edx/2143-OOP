@@ -9,8 +9,8 @@ This program defines a Fraction class that supports basic arithmetic operations 
 
 |   #   | File             | Description                                        |
 | :---: | ---------------- | -------------------------------------------------- |
-|   1   | [Main.cpp](./main.cpp)         | Main had the code to overload operations like +,-,*,/, and ==      |
-|   2   | [data.txt](./data.txt)| It has fractions        |
+|   1   | [Main.cpp](./main.cpp)         | Main has the code to overload operations such as +,-,*,/, and ==      |
+|   2   | [data.txt](./data.txt)| It contains fractions operations       |
 
 ### Instructions
 Navigate to the directory where your `main.cpp` file is located. Use the `cd` command to change directories. Ensure that you have a file named `data.txt` in the same directory. This file should contain the fraction operations you want to perform. Compile the program with `g++ -o fraction_program main.cpp`. Run the program using `./main.cpp < data.txt`. Finally, review the output in the terminal.
