@@ -13,7 +13,7 @@ This program defines a Fraction class that supports basic arithmetic operations 
 |   2   | [data.txt](./data.txt)| It has fractions        |
 
 ### Instructions
-
+In the terminal, type in `./main < data.txt`
 
 - Example Command:
     
