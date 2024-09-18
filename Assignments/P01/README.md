@@ -9,7 +9,7 @@ This program defines a Fraction class that supports basic arithmetic operations 
 
 |   #   | File             | Description                                        |
 | :---: | ---------------- | -------------------------------------------------- |
-|   1   | [Main.cpp](./main.cpp)         | Main has the code to overload operations such as +,-,*,/, and ==      |
+|   1   | [Main.cpp](./main.cpp)         | Main has the code to overload operations such as `+` `-` `*` `/` and `==`      |
 |   2   | [data.txt](./data.txt)| It contains fractions operations       |
 
 ### Instructions
