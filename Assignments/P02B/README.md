@@ -89,3 +89,44 @@ Knucklebones IS-A Game (inheritance).
 
 ### Relationships:
 Knucklebones IS-A Game (inheritance).
+
+### Keywords Classification:
+#### Necessary:
+First name
+
+Score
+
+Player stats
+
+Winner
+
+#### Possible:
+
+High score
+
+Leaderboard
+
+Streak
+
+#### Wishful:
+Chat
+
+Coins
+
+Levels 
+
+Messaging
+
+Teams
+
+Team stats
+
+Userid
+
+### Inheritance vs. Composition:
+#### Inheritance:
+The Knucklebones class inherits from the Game class because Knucklebones IS-A Game.
+
+#### Composition:
+The Player class has a HAS-A relationship with Dice because a player HAS-A set of dice.
+The Game class has a HAS-A relationship with Player because a game HAS-A set of players.
