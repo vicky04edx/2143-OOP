@@ -8,6 +8,8 @@ This project demonstrates a simple Hello World program using the ncurses library
 |   #   | File             | Description                                        |
 | :---: | ---------------- | -------------------------------------------------- |
 |   1   | [Screenshot P02A](./Assignments/P02A/helloworld_screenshot.png) | HELLO WORLD Screenshot in Terminal
+|   2   | [hello_ncurses.cpp](./hello_ncurses.cpp.cpp)         | Main has the code to print `Hello Worl!` |
+
 
 <img src=helloworld_screenshot.png width=1000>
 
