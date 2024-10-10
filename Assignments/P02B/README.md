@@ -73,3 +73,19 @@ A Player IS-A participant in the game (composition with Game).
 #### Relationships:
 HAS-A relationship with Player (composition).
 Knucklebones IS-A Game (inheritance).
+
+### Knucklebones Class (inherits from Game)
+#### Data (Attributes):
+`board`: A 3x3 grid specific to Knucklebones.
+
+`knucklebones_specific_rules`: Specific rules for Knucklebones, including multipliers and dice removal.
+
+#### Actions (Methods):
+`start_round()`: Starts a round of Knucklebones.
+
+`end_round()`: Ends the current round and checks if the game should finish.
+
+`calculate_winner()`: Determines the winner by comparing player scores.
+
+### Relationships:
+Knucklebones IS-A Game (inheritance).
