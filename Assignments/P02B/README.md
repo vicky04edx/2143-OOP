@@ -92,36 +92,13 @@ Knucklebones IS-A Game (inheritance).
 
 ### Keywords Classification:
 #### Necessary:
-First name
-
-Score
-
-Player stats
-
-Winner
+First name, Score, Player stats, Winner
 
 #### Possible:
+High score, Leaderboard, Streak
 
-High score
-
-Leaderboard
-
-Streak
-
-#### Wishful:
-Chat
-
-Coins
-
-Levels 
-
-Messaging
-
-Teams
-
-Team stats
-
-Userid
+#### Wishful: 
+Chat, Coins, Levels, Messaging, Teams, Team stats, Userid
 
 ### Inheritance vs. Composition:
 #### Inheritance:
