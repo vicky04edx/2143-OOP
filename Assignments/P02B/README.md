@@ -6,18 +6,18 @@ This assignment requires designing a set of classes for a digital version of the
 
 ### Class Design Outline
 
-Dice Class
-Data (Attributes):
+## Dice Class
+# Data (Attributes):
 
 `sides`: Number of sides on the dice (default: 6).
 `current_value`: Value of the dice after rolling.
 
-Actions (Methods):
+# Actions (Methods):
 
 `roll()`: Simulates rolling the dice and assigns a random value between 1 and 6 to current_value.
 `get_value()`: Returns the current value of the dice.
 
-Relationships:
+# Relationships:
 
 A Player HAS-A set of Dice (composition).
 Dice is used during the game for rolling and placing.
