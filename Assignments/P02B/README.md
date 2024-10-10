@@ -24,8 +24,32 @@ This assignment requires designing a set of classes for a digital version of the
 A Player HAS-A set of Dice (composition).
 Dice is used during the game for rolling and placing.
 
+### Player Class
+#### Data (Attributes):
 
+`name`: Player’s name.
 
+`score`: The current score of the player.
 
+`grid[3][3]`: 3x3 grid where the player places dice.
 
+`dice_set`: A set of dice used by the player for rolling.
 
+`player_stats`: Could include stats such as wins, losses, and high score.
+
+#### Actions (Methods):
+
+`roll_dice()`: Rolls a dice and returns the rolled value.
+
+`place_dice(int column, int value)`: Places a dice in the selected column of the grid.
+
+`get_score()`: Calculates and returns the current score based on grid contents and scoring rules.
+
+`update_score()`: Updates the player's score after placing dice.
+
+`remove_opponent_dice()`: Removes opponent's matching dice if placed in the same column.
+
+#### Relationships:
+
+A Player HAS-A set of Dice (composition).
+A Player IS-A participant in the game (composition with Game).
