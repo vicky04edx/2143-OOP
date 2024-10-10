@@ -10,11 +10,13 @@ This assignment requires designing a set of classes for a digital version of the
 #### Data (Attributes):
 
 `sides`: Number of sides on the dice (default: 6).
+
 `current_value`: Value of the dice after rolling.
 
 #### Actions (Methods):
 
 `roll()`: Simulates rolling the dice and assigns a random value between 1 and 6 to current_value.
+
 `get_value()`: Returns the current value of the dice.
 
 #### Relationships:
