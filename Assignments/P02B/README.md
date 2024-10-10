@@ -53,3 +53,23 @@ Dice is used during the game for rolling and placing.
 
 A Player HAS-A set of Dice (composition).
 A Player IS-A participant in the game (composition with Game).
+
+### Game Class
+#### Data (Attributes):
+`players[2]`: Array of two players.
+
+`current_round`: Tracks the current round of the game.
+
+`rules`: General game rules.
+
+#### Actions (Methods):
+
+`start_game()`: Initializes the game, setting up players and starting the first round.
+
+`end_game()`: Ends the game and displays the results.
+
+`get_winner()`: Calculates and returns the player with the highest score.
+
+#### Relationships:
+HAS-A relationship with Player (composition).
+Knucklebones IS-A Game (inheritance).
