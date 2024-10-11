@@ -49,7 +49,7 @@ Dice is used during the game for rolling and placing.
 
 `remove_opponent_dice()`: Removes opponent's matching dice if placed in the same column.
 
-#### Relationships:
+#### - Relationships:
 
 A Player HAS-A set of Dice (composition).
 A Player IS-A participant in the game (composition with Game).
@@ -70,7 +70,7 @@ A Player IS-A participant in the game (composition with Game).
 
 `get_winner()`: Calculates and returns the player with the highest score.
 
-#### Relationships:
+#### - Relationships:
 HAS-A relationship with Player (composition).
 Knucklebones IS-A Game (inheritance).
 
@@ -87,7 +87,7 @@ Knucklebones IS-A Game (inheritance).
 
 `calculate_winner()`: Determines the winner by comparing player scores.
 
-### Relationships:
+### - Relationships:
 Knucklebones IS-A Game (inheritance).
 
 ### Keywords Classification:
