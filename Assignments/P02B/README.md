@@ -87,7 +87,7 @@ Knucklebones IS-A Game (inheritance).
 
 `calculate_winner()`: Determines the winner by comparing player scores.
 
-### - Relationships:
+#### - Relationships:
 Knucklebones IS-A Game (inheritance).
 
 ### Keywords Classification:
