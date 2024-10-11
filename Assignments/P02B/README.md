@@ -7,25 +7,25 @@ This assignment requires designing a set of classes for a digital version of the
 ### Class Design Outline
 
 ### Dice Class
-#### Data (Attributes):
+#### - Data (Attributes):
 
 `sides`: Number of sides on the dice (default: 6).
 
 `current_value`: Value of the dice after rolling.
 
-#### Actions (Methods):
+#### - Actions (Methods):
 
 `roll()`: Simulates rolling the dice and assigns a random value between 1 and 6 to current_value.
 
 `get_value()`: Returns the current value of the dice.
 
-#### Relationships:
+#### - Relationships:
 
 A Player HAS-A set of Dice (composition).
 Dice is used during the game for rolling and placing.
 
 ### Player Class
-#### Data (Attributes):
+#### - Data (Attributes):
 
 `name`: Player’s name.
 
@@ -37,7 +37,7 @@ Dice is used during the game for rolling and placing.
 
 `player_stats`: Could include stats such as wins, losses, and high score.
 
-#### Actions (Methods):
+#### - Actions (Methods):
 
 `roll_dice()`: Rolls a dice and returns the rolled value.
 
@@ -55,14 +55,14 @@ A Player HAS-A set of Dice (composition).
 A Player IS-A participant in the game (composition with Game).
 
 ### Game Class
-#### Data (Attributes):
+#### - Data (Attributes):
 `players[2]`: Array of two players.
 
 `current_round`: Tracks the current round of the game.
 
 `rules`: General game rules.
 
-#### Actions (Methods):
+#### - Actions (Methods):
 
 `start_game()`: Initializes the game, setting up players and starting the first round.
 
@@ -75,12 +75,12 @@ HAS-A relationship with Player (composition).
 Knucklebones IS-A Game (inheritance).
 
 ### Knucklebones Class (inherits from Game)
-#### Data (Attributes):
+#### - Data (Attributes):
 `board`: A 3x3 grid specific to Knucklebones.
 
 `knucklebones_specific_rules`: Specific rules for Knucklebones, including multipliers and dice removal.
 
-#### Actions (Methods):
+#### - Actions (Methods):
 `start_round()`: Starts a round of Knucklebones.
 
 `end_round()`: Ends the current round and checks if the game should finish.
@@ -91,19 +91,19 @@ Knucklebones IS-A Game (inheritance).
 Knucklebones IS-A Game (inheritance).
 
 ### Keywords Classification:
-#### Necessary:
+#### - Necessary:
 First name, Score, Player stats, Winner
 
-#### Possible:
+#### - Possible:
 High score, Leaderboard, Streak
 
-#### Wishful: 
+#### - Wishful: 
 Chat, Coins, Levels, Messaging, Teams, Team stats, Userid
 
 ### Inheritance vs. Composition:
-#### Inheritance:
+#### - Inheritance:
 The Knucklebones class inherits from the Game class because Knucklebones IS-A Game.
 
-#### Composition:
+#### - Composition:
 The Player class has a HAS-A relationship with Dice because a player HAS-A set of dice.
 The Game class has a HAS-A relationship with Player because a game HAS-A set of players.
