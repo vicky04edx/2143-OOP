@@ -56,23 +56,25 @@ A Player IS-A participant in the game (composition with Game).
 
 ### Game Class
 #### - Data (Attributes):
-`players[2]`: Array of two players.
+`vector<Player> players`: A dynamic array of players participating in the game.
 
-`current_round`: Tracks the current round of the game.
+`map<string, int> scores`: Maps player IDs (or names) to their scores.
 
-`rules`: General game rules.
+`bool isDone`: Tracks if the game has ended.
 
 #### - Actions (Methods):
 
-`start_game()`: Initializes the game, setting up players and starting the first round.
+`addToScore(string uid, int val)`: Adds val to the player's score using their unique ID.
 
-`end_game()`: Ends the game and displays the results.
+`start_game()`: Starts the game and initializes players.
 
-`get_winner()`: Calculates and returns the player with the highest score.
+`end_game()`: Ends the game and checks for the winner.
+
+`get_winner()`: Determines the player with the highest score.
 
 #### - Relationships:
-HAS-A relationship with Player (composition).
-Knucklebones IS-A Game (inheritance).
+A Game HAS-A collection of players stored in a vector<Player>.
+A Game uses a map to manage player scores dynamically.
 
 ### Knucklebones Class (inherits from Game)
 #### - Data (Attributes):
