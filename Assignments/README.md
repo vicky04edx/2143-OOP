@@ -5,4 +5,4 @@
 |  1  | [A05](./A05)      | WSL Screenshot          |
 |  2  | [P01](./P01)      | PROGRAM 1: FRACTIONS        |
 |  3  | [P02A](./P02A)      | N CURSES TEST        |
-|  4  | [P02B](./A05)      | Class Design         |
+|  4  | [P02B](./P02B)      | Class Design         |
