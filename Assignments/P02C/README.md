@@ -22,15 +22,15 @@ This program simulates a digital version of the game "Knucklebones" using ncurse
 1. Use the `cd` command to change to the directory containing `game.cpp` and the necessary header files.
     
     Example:
-    vh@VickysLaptop:~$ cd ~/projects/2143-OOP/Assignments/P02C  
+    `vh@VickysLaptop:~$ cd ~/projects/2143-OOP/Assignments/P02C`  
 
 2. Compile the code using `g++` with the ncurses library.
     
-    g++ -std=c++20 game.cpp -o main -l ncurses 
+    `g++ -std=c++20 game.cpp -o main -l ncurses` 
 
 3. Execute the compiled program.
     
-    ./main  
+    `./main`  
 
 4. Upon running the program, an input box will prompt you to enter the player's name. Enter your name and press `Enter` to continue.
 
