@@ -20,29 +20,41 @@ This program simulates a digital version of the game "Knucklebones" using ncurse
 ## Instructions
 
 1. Use the `cd` command to change to the directory containing `game.cpp` and the necessary header files.
+    
     Example:
     vh@VickysLaptop:~$ cd ~/projects/2143-OOP/Assignments/P02C  
+
 2. Compile the code using `g++` with the ncurses library.
-    g++ -std=c++20 game.cpp -o main -l ncurses  
+    
+    g++ -std=c++20 game.cpp -o main -l ncurses 
+
 3. Execute the compiled program.
+    
     ./main  
+
 4. Upon running the program, an input box will prompt you to enter the player's name. Enter your name and press `Enter` to continue.
 
 ## Work in Progress 
 ### Pending Features:
 
-Complete game logic for rolling dice, updating grids, and calculating scores.
-Displaying real-time score updates.
-Implementing multiplayer functionality.
+- Complete game logic for rolling dice, updating grids, and calculating scores.
+
+- Displaying real-time score updates.
+
+- Implementing multiplayer functionality.
 
 ### Challenges Encountered:
 
-Overlapping Text: The input box sometimes overlaps the prompt and previously printed messages.
-Input Box Placement: Adjusting the position of the input box dynamically without conflicts.
-Color Configurations: Consistent color application for borders and text across the interface.
+- Overlapping Text: The input box sometimes overlaps the prompt and previously printed messages.
+
+- Input Box Placement: Adjusting the position of the input box dynamically without conflicts.
+
+- Color Configurations: Consistent color application for borders and text across the interface.
 
 ### Next Steps:
 
-Fix text and box alignment issues to ensure a clean display.
-Integrate the player name with other game components (e.g., score tracking).
-Test for edge cases and enhance error handling in the input process.
+- Fix text and box alignment issues to ensure a clean display.
+
+- Integrate the player name with other game components (e.g., score tracking).
+
+- Test for edge cases and enhance error handling in the input process.
