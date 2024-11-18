@@ -6214,3 +6214,97 @@ clicked: [4, 20]
 clicked grid: true
 colClicked: 2
 Key pressed: 409
+vals: [6, 3, 8, 65]
+yx: [1, 10]
+Initializing grid: true
+height: [7, 13, 1, 3]
+Key pressed: 0
+Mouse pressed: true
+clicked: [11, 18]
+drawing button: true
+Key pressed: 409
+Mouse pressed: true
+clicked: [9, 44]
+Key pressed: 409
+vals: [6, 3, 8, 65]
+yx: [1, 10]
+Initializing grid: true
+height: [7, 13, 1, 3]
+Key pressed: 0
+vals: [6, 3, 8, 65]
+yx: [1, 10]
+Initializing grid: true
+height: [7, 13, 1, 3]
+Key pressed: 0
+Mouse pressed: true
+clicked: [11, 20]
+drawing button: true
+Key pressed: 409
+Mouse pressed: true
+clicked: [11, 18]
+drawing button: true
+Key pressed: 409
+Mouse pressed: true
+clicked: [7, 20]
+clicked grid: true
+colClicked: 2
+Key pressed: 409
+Mouse pressed: true
+clicked: [11, 18]
+drawing button: true
+Key pressed: 409
+Mouse pressed: true
+clicked: [5, 17]
+clicked grid: true
+colClicked: 1
+Key pressed: 409
+Mouse pressed: true
+clicked: [9, 27]
+Key pressed: 409
+Mouse pressed: true
+Key pressed: 409
+vals: [6, 3, 8, 65]
+yx: [1, 10]
+Initializing grid: true
+height: [7, 13, 1, 3]
+Key pressed: 0
+Mouse pressed: true
+clicked: [11, 18]
+drawing button: true
+Key pressed: 409
+Mouse pressed: true
+clicked: [12, 18]
+drawing button: true
+Key pressed: 409
+vals: [6, 3, 8, 65]
+yx: [1, 10]
+Initializing grid: true
+height: [7, 13, 1, 3]
+Key pressed: 0
+Mouse pressed: true
+clicked: [11, 17]
+drawing button: true
+Key pressed: 409
+Mouse pressed: true
+clicked: [5, 20]
+clicked grid: true
+colClicked: 2
+Key pressed: 409
+Mouse pressed: true
+clicked: [12, 17]
+drawing button: true
+Key pressed: 409
+Mouse pressed: true
+clicked: [5, 15]
+clicked grid: true
+colClicked: 1
+Key pressed: 409
+Mouse pressed: true
+clicked: [11, 19]
+drawing button: true
+Key pressed: 409
+Mouse pressed: true
+clicked: [5, 12]
+clicked grid: true
+colClicked: 0
+Key pressed: 409
