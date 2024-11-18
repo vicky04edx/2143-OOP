@@ -76,7 +76,7 @@ int main() {
 
     // Clear the window and print a welcome message
     clear();
-    mvprintw(8, 5, "Welcome, %s! Press 'q' to quit.", playerName.c_str());
+    mvprintw(0, 5, "Welcome, %s! Press 'q' to quit.", playerName.c_str());
     refresh();
 
     keypad(stdscr, TRUE);
@@ -131,7 +131,7 @@ int main() {
                     }
                     if (grid.clicked(event.y, event.x - 1)) {
                         Logger::log("clicked grid", "true");
-                        dice.clear();
+                        dice.clearDice();//change 
                         grid.addValue(event.y, event.x - 1, dice.getLastDiceValue());  // Mark click location
                         grid.refreshGrid();
                     }

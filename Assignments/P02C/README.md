@@ -51,10 +51,10 @@ This program simulates a digital version of the game "Knucklebones" using ncurse
 
 - Color Configurations: Consistent color application for borders and text across the interface.
 
+- Character Display Issue: The `●` (unicode dot) character cannot be properly displayed in the game.
+
 ### Next Steps:
 
 - Fix text and box alignment issues to ensure a clean display.
 
 - Integrate the player name with other game components (e.g., score tracking).
-
-- Test for edge cases and enhance error handling in the input process.
