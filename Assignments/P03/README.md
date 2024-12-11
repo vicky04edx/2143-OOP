@@ -67,3 +67,6 @@ Implements the text input handling.|
 - Optimize grid and button interactions for smooth gameplay.
 
 - Make the grid handle user input (mouse click) to put the correspondent numebers in the grid after rolling the dice.
+
+### Screenshots:
+
