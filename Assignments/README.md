@@ -7,4 +7,4 @@
 |  3  | [P02A](./P02A)      | N CURSES TEST        |
 |  4  | [P02B](./P02B)      | Class Design         |
 |  5  | [P02C](./P02C)      | KNUCKLEBONES        |
-|  5  | [P03](./P03)      | KNUCKLEBONES with SFML        |
+|  6  | [P03](./P03)      | KNUCKLEBONES with SFML        |
