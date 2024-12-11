@@ -70,3 +70,6 @@ Implements the text input handling.|
 
 ### Screenshots:
 
+<img src=sfml_hw.png width=300>               <img src=sfml_hw1.png width=300>
+
+<img src=sfml_hw2.png width=300>              <img src=sfml_hw3.png width=300>
