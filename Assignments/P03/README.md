@@ -15,8 +15,7 @@ This project simulates a digital version of the game "Knucklebones" using SFML (
 |   4   | [button_class.hpp](./button_class.hpp)   | Defines buttons for user interactions, such as rolling dice. |
 |   5   | [button_class.cpp](./button_class.cpp)   | Implements button functionality and rendering.|
 |   6   | [nameinput_class.hpp](./nameinput_class.hpp)   | Handles text input for player names.|
-|   7   | [nameinput_class.cpp](./nameinput_class.cpp)   | 
-Implements the text input handling.|
+|   7   | [nameinput_class.cpp](./nameinput_class.cpp)   | Implements the text input handling.|
 |   8   | [grid_class.hpp](./grid_class.hpp)   | Defines the structure and operations of the game grid. |
 |   9   | [grid_class.cpp](./grid_class.cpp)   | Implements the game grid's logic and visualization. |
 |   10   | [player.hpp](./player.hpp)   | Defines player properties, such as score and name.|
