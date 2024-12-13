@@ -1,16 +1,19 @@
-#ifndef PLAYER_HPP
-#define PLAYER_HPP
+#ifndef PLAYER_HPP  // Check if PLAYER_HPP has not been defined
+#define PLAYER_HPP  // Define PLAYER_HPP to prevent multiple inclusions of this header file
 
-#include <string>
+#include <string>  // Include the string header to use std::string
 
+// Player class declaration
 class Player {
 public:
-    Player(const std::string& name);
+    // Constructor to initialize a Player object with a name
+    Player(const std::string& name);  
 
-    const std::string& getName() const;
+    // Getter function to retrieve the player's name
+    const std::string& getName() const; 
 
 private:
-    std::string name;
+    std::string name;  // Member variable to store the player's name
 };
 
-#endif // PLAYER_HPP
+#endif // PLAYER_HPP  // End of the header guard
